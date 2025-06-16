@@ -1,29 +1,23 @@
 import React from 'react';
-import { FaGraduationCap, FaUsers, FaBook, FaAward } from 'react-icons/fa';
 
 const About: React.FC = () => {
   const stats: Array<{
-    icon: React.ComponentType<{ className?: string }>; // Explicitly define the type for the icon
     number: string;
     label: string;
   }> = [
     {
-      icon: FaGraduationCap,
       number: '1000+',
       label: 'Students',
     },
     {
-      icon: FaUsers,
       number: '100+',
       label: 'Teachers',
     },
     {
-      icon: FaBook,
       number: '50+',
       label: 'Courses',
     },
     {
-      icon: FaAward,
       number: '25+',
       label: 'Years',
     },
@@ -40,23 +34,15 @@ const About: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-          {stats.map((stat, index) => {
-            const IconComponent = stat.icon;
-            return (
-              <div
-                key={index}
-                className="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300"
-              >
-                <div className="text-primary mb-4 flex justify-center">
-                  <IconComponent className="w-8 h-8" /> {/* Pass className explicitly */}
-                </div>
-                <div className="text-3xl font-bold text-gray-900 mb-2">
-                  {stat.number}
-                </div>
-                <div className="text-gray-600">{stat.label}</div>
-              </div>
-            );
-          })}
+          {stats.map((stat, index) => (
+            <div
+              key={index}
+              className="bg-white rounded-lg shadow-lg p-8 text-center transform hover:scale-105 transition-transform duration-300"
+            >
+              <div className="text-3xl font-bold text-gray-900 mb-2">{stat.number}</div>
+              <div className="text-gray-600">{stat.label}</div>
+            </div>
+          ))}
         </div>
 
         <div className="mt-20 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -68,9 +54,7 @@ const About: React.FC = () => {
             />
           </div>
           <div>
-            <h3 className="text-3xl font-bold text-gray-900 mb-6">
-              Our Mission
-            </h3>
+            <h3 className="text-3xl font-bold text-gray-900 mb-6">Our Mission</h3>
             <p className="text-gray-600 mb-6">
               At GMP Singhola, we are committed to providing a nurturing environment where students can develop their full potential. Our mission is to:
             </p>

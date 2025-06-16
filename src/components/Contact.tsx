@@ -1,25 +1,20 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
 const Contact: React.FC = () => {
   const contactInfo: Array<{
-    icon: React.ComponentType<{ className?: string }>;
     title: string;
     content: string;
   }> = [
     {
-      icon: FaMapMarkerAlt,
       title: 'Address',
       content: 'GMP Singhola School\n[Your School Address]\n[City, State, ZIP]',
     },
     {
-      icon: FaPhone,
       title: 'Phone',
       content: '[Your Phone Number]',
     },
     {
-      icon: FaEnvelope,
       title: 'Email',
       content: '[Your Email Address]',
     },
@@ -51,22 +46,16 @@ const Contact: React.FC = () => {
             viewport={{ once: true }}
             className="space-y-8"
           >
-            {contactInfo.map((info, index) => {
-              const IconComponent = info.icon;
-              return (
-                <div key={index} className="flex items-start space-x-4">
-                  <div className="text-primary">
-                    <IconComponent className="w-6 h-6" />
-                  </div>
-                  <div>
-                    <h3 className="text-xl font-semibold mb-2">{info.title}</h3>
-                    <p className="text-gray-600 whitespace-pre-line">
-                      {info.content}
-                    </p>
-                  </div>
+            {contactInfo.map((info, index) => (
+              <div key={index} className="flex items-start space-x-4">
+                <div>
+                  <h3 className="text-xl font-semibold mb-2">{info.title}</h3>
+                  <p className="text-gray-600 whitespace-pre-line">
+                    {info.content}
+                  </p>
                 </div>
-              );
-            })}
+              </div>
+            ))}
           </motion.div>
 
           <motion.div
@@ -94,4 +83,4 @@ const Contact: React.FC = () => {
   );
 };
 
-export default Contact; 
+export default Contact;

@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { FaBars, FaTimes } from 'react-icons/fa';
 
 const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -13,8 +12,6 @@ const Navbar: React.FC = () => {
     { name: 'News', path: '/news' },
     { name: 'Contact', path: '/contact' },
   ];
-
-  const MenuIcon: React.ComponentType<{ size?: number }> = isOpen ? FaTimes : FaBars;
 
   return (
     <nav className="bg-white shadow-md">
@@ -42,7 +39,7 @@ const Navbar: React.FC = () => {
             className="md:hidden text-gray-700"
             onClick={() => setIsOpen(!isOpen)}
           >
-            <MenuIcon size={24} />
+            {isOpen ? 'Close' : 'Menu'} {/* Replace icons with text */}
           </button>
         </div>
 
@@ -68,4 +65,4 @@ const Navbar: React.FC = () => {
   );
 };
 
-export default Navbar; 
+export default Navbar;
