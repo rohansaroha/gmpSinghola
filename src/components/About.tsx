@@ -84,13 +84,6 @@ const About: React.FC = () => {
     }
   ];
 
-  // Board examination results
-  const boardResults = [
-    { year: "2021-22", registered: 54, passed: 48, percentage: "88%" },
-    { year: "2020-21", registered: 72, passed: 72, percentage: "100%" },
-    { year: "2019-20", registered: 65, passed: 49, percentage: "75%" }
-  ];
-
   // Staff information
   const staffInfo = {
     principal: "PRIYANKA MALIK",
