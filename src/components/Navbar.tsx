@@ -7,9 +7,7 @@ const Navbar: React.FC = () => {
   const navItems = [
     { name: 'Home', path: '/' },
     { name: 'About', path: '/about' },
-    { name: 'Programs', path: '/programs' },
-    { name: 'Faculty', path: '/faculty' },
-    { name: 'News', path: '/news' },
+    { name: 'Gallery', path: '/gallery' },
     { name: 'Contact', path: '/contact' },
   ];
 
@@ -18,7 +16,7 @@ const Navbar: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="flex justify-between items-center h-16">
           <Link to="/" className="text-2xl font-bold text-primary">
-            GMP Singhola
+            GMP School Singhola
           </Link>
 
           {/* Desktop Menu */}

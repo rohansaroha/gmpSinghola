@@ -8,15 +8,15 @@ const Contact: React.FC = () => {
   }> = [
     {
       title: 'Address',
-      content: 'GMP Singhola School\n[Your School Address]\n[City, State, ZIP]',
+      content: 'GMP School Singhola\n70/5 marbel market singhola\nDelhi - 110040',
     },
     {
       title: 'Phone',
-      content: '[Your Phone Number]',
+      content: '8745864417 , 9654738271',
     },
     {
       title: 'Email',
-      content: '[Your Email Address]',
+      content: 'gmpssinghola40@gmail.com',
     },
   ];
 
@@ -31,7 +31,7 @@ const Contact: React.FC = () => {
           className="text-center mb-16"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-primary mb-4">
-            Contact GMP Singhola
+            Contact GMP School Singhola
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             Have questions? We'd love to hear from you. Send us a message and we'll respond as soon as possible.
