@@ -53,58 +53,71 @@ const About: React.FC = () => {
       title: "Copies of Valid Water, Health and Sanitation Certificates",
       fileName: "health_sanitation.pdf",
       pdfUrl: "/docs/health_sanitation.pdf"
+    },
+    {
+      id: 9,
+      title: "Mandatory Public Disclosure Details - Complete Information",
+      fileName: "mandatory_disclosure_details.pdf",
+      pdfUrl: "/docs/mandatory_disclosure_details.pdf"
     }
   ];
 
   // Results and Academics documents
   const academicDocuments = [
     {
-      id: 9,
+      id: 10,
       title: "Fee Structure of the School",
       fileName: "fee_structure.pdf",
       pdfUrl: "/docs/fee_structure.pdf"
     },
     {
-      id: 10,
+      id: 11,
       title: "Annual Academic Calendar",
       fileName: "academic_calendar.pdf",
       pdfUrl: "/docs/academic_calendar.pdf"
     },
     {
-      id: 11,
+      id: 12,
       title: "List of School Management Committee (SMC)",
       fileName: "smc_list.pdf",
       pdfUrl: "/docs/smc_list.pdf"
     },
     {
-      id: 12,
+      id: 13,
       title: "List of Parents Teachers Association (PTA) Members",
       fileName: "pta_list.pdf",
       pdfUrl: "/docs/pta_list.pdf"
+    },
+    {
+      id: 14,
+      title: "Last Three Years Academic Results",
+      fileName: "last_three_years.pdf",
+      pdfUrl: "/docs/last_three_years.pdf"
     }
   ];
 
   // Staff information
   const staffInfo = {
     principal: "PRIYANKA MALIK",
-    totalTeachers: 17,
+    totalTeachers: 21,
     pgt: 0,
-    tgt: 6,
-    prt: 7,
+    tgt: 9,
+    prt: 10,
     teacherStudentRatio: "1:40",
     specialEducator: 1,
-    counsellor: 1
+    wellness: 1
   };
 
   // Infrastructure information
   const infrastructureInfo = {
     campusArea: "1890 (in sq mtr)",
-    classrooms: "Document 16",
-    laboratories: "Document 17",
+    classrooms: 16,
+    laboratories: 3,
+    library: 1,
     internet: "YES",
     girlsToilets: 6,
     boysToilets: 6,
-    youtubeLink: "https://youtu.be/"
+    youtubeLink: "https://www.youtube.com/watch?v=MGp27k0B-kc"
   };
 
   const handleDocumentClick = (pdfUrl: string, fileName: string) => {
@@ -383,7 +396,7 @@ const About: React.FC = () => {
                     </div>
                     <div className="flex justify-between border-b pb-2">
                       <span className="font-medium text-gray-700">Details of Counsellor and Wellness Teacher:</span>
-                      <span className="text-gray-900 font-semibold">{staffInfo.counsellor}</span>
+                      <span className="text-gray-900 font-semibold">{staffInfo.wellness}</span>
                     </div>
                   </div>
                 </div>
@@ -420,8 +433,12 @@ const About: React.FC = () => {
                         onClick={() => handleDocumentClick("/docs/lab_details.pdf", "lab_details.pdf")}
                         className="text-blue-600 hover:text-blue-800 font-semibold underline"
                       >
-                        {infrastructureInfo.laboratories}
+                        {infrastructureInfo.laboratories} Labs
                       </button>
+                    </div>
+                    <div className="flex justify-between border-b pb-2">
+                      <span className="font-medium text-gray-700">Library:</span>
+                      <span className="text-gray-900 font-semibold">{infrastructureInfo.library}</span>
                     </div>
                     <div className="flex justify-between border-b pb-2">
                       <span className="font-medium text-gray-700">Internet Facility:</span>
