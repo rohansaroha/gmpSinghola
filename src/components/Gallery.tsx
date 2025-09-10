@@ -27,14 +27,45 @@ const Gallery: React.FC = () => {
       alt: 'School Event',
       category: 'Events',
       title: 'School Activities & Events'
+    },
+    // Newly added photos
+    {
+      src: '/images/events/event2.jpeg',
+      alt: 'Students enjoying classroom activity',
+      category: 'Students',
+      title: 'Classroom Activity'
+    },
+    {
+      src: '/images/events/event3.jpeg',
+      alt: 'Students having lunch together',
+      category: 'Students',
+      title: 'Midday Meal Time'
+    },
+    {
+      src: '/images/events/event4.jpeg',
+      alt: 'Students celebrating Raksha Bandhan',
+      category: 'Events',
+      title: 'Raksha Bandhan Celebration'
+    },
+    {
+      src: '/images/events/event5.jpeg',
+      alt: 'Teachers group photograph',
+      category: 'Staff',
+      title: 'Teachers Team'
+    },
+    {
+      src: '/images/events/event6.jpeg',
+      alt: 'Students eating lunch in class',
+      category: 'Students',
+      title: 'Lunch Break Moments'
     }
   ];
 
   const categories = ['All', 'Campus', 'Staff', 'Events', 'Students', 'Facilities'];
   const [selectedCategory, setSelectedCategory] = React.useState('All');
 
-  const filteredImages = selectedCategory === 'All' 
-    ? galleryImages 
+  const filteredImages = selectedCategory === 'All'
+    ? galleryImages
     : galleryImages.filter(img => img.category === selectedCategory);
 
   return (
@@ -88,7 +119,7 @@ const Gallery: React.FC = () => {
                   className="w-full h-64 object-cover group-hover:scale-110 transition-transform duration-500"
                 />
               </div>
-              
+
               {/* Overlay */}
               <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="absolute bottom-6 left-6 right-6 text-white">
@@ -101,40 +132,6 @@ const Gallery: React.FC = () => {
             </motion.div>
           ))}
         </div>
-
-        {/* Add More Photos Message */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.5 }}
-          className="text-center mt-16 bg-white rounded-2xl shadow-lg p-8"
-        >
-          <div className="max-w-2xl mx-auto">
-            <h3 className="text-2xl font-bold text-gray-900 mb-4">More Photos Coming Soon!</h3>
-            <p className="text-gray-600 mb-6">
-              We're continuously updating our gallery with new photos of school activities, events, and campus life. 
-              Stay tuned for more glimpses into the vibrant GMP School community.
-            </p>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-              <div className="bg-gray-100 rounded-lg p-4 text-center">
-                <div className="text-primary text-2xl mb-2">📚</div>
-                <p className="text-sm font-medium text-gray-700">Classroom Activities</p>
-              </div>
-              <div className="bg-gray-100 rounded-lg p-4 text-center">
-                <div className="text-primary text-2xl mb-2">🎭</div>
-                <p className="text-sm font-medium text-gray-700">Cultural Events</p>
-              </div>
-              <div className="bg-gray-100 rounded-lg p-4 text-center">
-                <div className="text-primary text-2xl mb-2">🏃</div>
-                <p className="text-sm font-medium text-gray-700">Sports Activities</p>
-              </div>
-              <div className="bg-gray-100 rounded-lg p-4 text-center">
-                <div className="text-primary text-2xl mb-2">🎓</div>
-                <p className="text-sm font-medium text-gray-700">Achievement Moments</p>
-              </div>
-            </div>
-          </div>
-        </motion.div>
       </div>
     </section>
   );

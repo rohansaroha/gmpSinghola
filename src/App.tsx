@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import HomeAbout from './components/HomeAbout';
 import About from './components/About';
 import Gallery from './components/Gallery';
+import InstagramReels from './components/InstagramReels';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import { initGA } from './utils/analytics';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
                 <Hero />
                 <HomeAbout />
                 <Gallery />
+                <InstagramReels />
               </>
             }
           />
