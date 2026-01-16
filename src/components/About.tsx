@@ -21,14 +21,14 @@ const About: React.FC = () => {
     {
       id: 3,
       title: "Copy of No Objection Certificate (NOC) issued, if applicable, by the State Govt./UT",
-      fileName: "affiliation_letter.pdf",
-      pdfUrl: "/docs/affiliation_letter.pdf"
+      fileName: "NOC.pdf",
+      pdfUrl: "/docs/NOC.pdf"
     },
     {
       id: 4,
       title: "Copies of Recognition Certificate under RTE Act 2009, and its Renewal if applicable",
-       fileName: "affiliation_letter.pdf",
-      pdfUrl: "/docs/affiliation_letter.pdf"
+      fileName: "Recognition_Certificate.pdf",
+      pdfUrl: "/docs/Recognition_Certificate.pdf"
     },
     {
       id: 5,
@@ -50,12 +50,18 @@ const About: React.FC = () => {
     },
     {
       id: 8,
+      title: "Self Certification Proforma",
+      fileName: "SELF_CERTIFICATION.pdf",
+      pdfUrl: "/docs/SELF_CERTIFICATION.pdf"
+    },
+    {
+      id: 9,
       title: "Copies of Valid Water, Health and Sanitation Certificates",
       fileName: "health_sanitation.pdf",
       pdfUrl: "/docs/health_sanitation.pdf"
     },
     {
-      id: 9,
+      id: 10,
       title: "Mandatory Public Disclosure Details - Complete Information",
       fileName: "mandatory_disclosure_details.pdf",
       pdfUrl: "/docs/mandatory_disclosure_details.pdf"
@@ -65,31 +71,31 @@ const About: React.FC = () => {
   // Results and Academics documents
   const academicDocuments = [
     {
-      id: 10,
+      id: 11,
       title: "Fee Structure of the School",
       fileName: "fee_structure.pdf",
       pdfUrl: "/docs/fee_structure.pdf"
     },
     {
-      id: 11,
+      id: 12,
       title: "Annual Academic Calendar",
       fileName: "academic_calendar.pdf",
       pdfUrl: "/docs/academic_calendar.pdf"
     },
     {
-      id: 12,
+      id: 13,
       title: "List of School Management Committee (SMC)",
       fileName: "smc_list.pdf",
       pdfUrl: "/docs/smc_list.pdf"
     },
     {
-      id: 13,
+      id: 14,
       title: "List of Parents Teachers Association (PTA) Members",
       fileName: "pta_list.pdf",
       pdfUrl: "/docs/pta_list.pdf"
     },
     {
-      id: 14,
+      id: 15,
       title: "Last Three Years Academic Results",
       fileName: "last_three_years.pdf",
       pdfUrl: "/docs/last_three_years.pdf"
@@ -144,9 +150,9 @@ const About: React.FC = () => {
             </p>
           </div>
           <div className="max-w-6xl mx-auto">
-            <img 
-              src="/images/school/ground.png" 
-              alt="GMP School Singhola Campus Ground" 
+            <img
+              src="/images/school/ground.png"
+              alt="GMP School Singhola Campus Ground"
               className="w-full rounded-lg shadow-xl"
             />
           </div>
@@ -236,7 +242,7 @@ const About: React.FC = () => {
             <div className="bg-gradient-to-r from-blue-600 to-blue-700 px-6 py-4">
               <h4 className="text-xl font-semibold text-white">Documents and Information</h4>
             </div>
-            
+
             <div className="overflow-x-auto">
               <table className="w-full">
                 <thead className="bg-gray-50">
@@ -283,8 +289,8 @@ const About: React.FC = () => {
               <div>
                 <h5 className="font-semibold text-blue-900 mb-2">Note:</h5>
                 <p className="text-blue-800 text-sm leading-relaxed">
-                  All documents are available as per CBSE guidelines for mandatory public disclosure. 
-                  Click on any document button to view or download the respective document. 
+                  All documents are available as per CBSE guidelines for mandatory public disclosure.
+                  Click on any document button to view or download the respective document.
                   For any queries regarding these documents, please contact the school administration.
                 </p>
               </div>
@@ -297,7 +303,7 @@ const About: React.FC = () => {
               <div className="bg-gradient-to-r from-green-600 to-green-700 px-6 py-4">
                 <h4 className="text-xl font-semibold text-white">C: Results and Academics</h4>
               </div>
-              
+
               <div className="overflow-x-auto">
                 <table className="w-full">
                   <thead className="bg-gray-50">
@@ -344,21 +350,21 @@ const About: React.FC = () => {
               <div className="bg-gradient-to-r from-orange-600 to-orange-700 px-6 py-4">
                 <h4 className="text-xl font-semibold text-white">D: Staff (Teaching)</h4>
               </div>
-              
+
               {/* Staff Photo Showcase */}
               <div className="p-6 mb-6">
                 <div className="text-center mb-6">
                   <h5 className="text-lg font-semibold text-gray-900 mb-4">Our Dedicated Teaching Staff</h5>
                   <div className="max-w-4xl mx-auto">
-                    <img 
-                      src="/images/staff/allStaff.jpeg" 
-                      alt="GMP School Teaching Staff" 
+                    <img
+                      src="/images/staff/allStaff.jpeg"
+                      alt="GMP School Teaching Staff"
                       className="w-full rounded-lg shadow-lg"
                     />
                   </div>
                 </div>
               </div>
-              
+
               <div className="p-6 pt-0">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4">
@@ -410,7 +416,7 @@ const About: React.FC = () => {
               <div className="bg-gradient-to-r from-teal-600 to-teal-700 px-6 py-4">
                 <h4 className="text-xl font-semibold text-white">E: School Infrastructure</h4>
               </div>
-              
+
               <div className="p-6">
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                   <div className="space-y-4">
@@ -488,9 +494,9 @@ const About: React.FC = () => {
                   transition={{ duration: 0.8 }}
                   className="relative rounded-2xl overflow-hidden shadow-2xl"
                 >
-                  <img 
-                    src="/images/events/event1.png" 
-                    alt="GMP School Event Activities" 
+                  <img
+                    src="/images/events/event1.png"
+                    alt="GMP School Event Activities"
                     className="w-full h-[350px] object-cover"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black via-transparent to-transparent opacity-30"></div>
