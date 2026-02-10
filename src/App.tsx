@@ -5,6 +5,7 @@ import Hero from './components/Hero';
 import HomeAbout from './components/HomeAbout';
 import About from './components/About';
 import Gallery from './components/Gallery';
+import PrincipalPage from './pages/PrincipalPage';
 import InstagramReels from './components/InstagramReels';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
@@ -32,6 +33,7 @@ const App: React.FC = () => {
             }
           />
           <Route path="/about" element={<About />} />
+          <Route path="/about/principal" element={<PrincipalPage />} />
           <Route path="/gallery" element={<Gallery />} />
           <Route path="/contact" element={<Contact />} />
           {/* Add more routes as we create more components */}

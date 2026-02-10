@@ -58,6 +58,66 @@ const Gallery: React.FC = () => {
       alt: 'Students eating lunch in class',
       category: 'Students',
       title: 'Lunch Break Moments'
+    },
+    {
+      src: '/images/events/event7.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event8.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event9.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event10.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event11.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event12.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event13.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event14.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event17.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
+    },
+    {
+      src: '/images/events/event18.jpeg',
+      alt: 'School event',
+      category: 'Events',
+      title: 'School Event'
     }
   ];
 

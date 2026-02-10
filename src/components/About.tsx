@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import { motion } from 'framer-motion';
 
 const About: React.FC = () => {
@@ -136,9 +137,15 @@ const About: React.FC = () => {
       <div className="container mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-bold text-gray-900 mb-4">About GMP School Singhola</h2>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto mb-6">
             Empowering students with quality education and fostering a culture of excellence.
           </p>
+          <Link
+            to="/about/principal"
+            className="inline-block px-6 py-3 bg-primary text-white font-medium rounded-lg hover:opacity-90 transition-opacity"
+          >
+            Message from Principal
+          </Link>
         </div>
 
         {/* School Ground Showcase */}
