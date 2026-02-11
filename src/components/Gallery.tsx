@@ -22,30 +22,30 @@ const Gallery: React.FC = () => {
       category: 'Staff',
       title: 'Dedicated Teaching Staff'
     },
-    {
-      src: '/images/events/event1.png',
-      alt: 'School Event',
-      category: 'Events',
-      title: 'School Activities & Events'
-    },
+    // {
+    //   src: '/images/events/event1.png',
+    //   alt: 'School Event',
+    //   category: 'Events',
+    //   title: 'School Activities & Events'
+    // },
     // Newly added photos
-    {
-      src: '/images/events/event2.jpeg',
-      alt: 'Students enjoying classroom activity',
-      category: 'Students',
-      title: 'Classroom Activity'
-    },
-    {
-      src: '/images/events/event3.jpeg',
-      alt: 'Students having lunch together',
-      category: 'Students',
-      title: 'Midday Meal Time'
-    },
+    // {
+    //   src: '/images/events/event2.jpeg',
+    //   alt: 'Students enjoying classroom activity',
+    //   category: 'Students',
+    //   title: 'Classroom Activity'
+    // },
+    // {
+    //   src: '/images/events/event3.jpeg',
+    //   alt: 'Students having lunch together',
+    //   category: 'Students',
+    //   title: 'Midday Meal Time'
+    // },
     {
       src: '/images/events/event4.jpeg',
       alt: 'Students celebrating Raksha Bandhan',
       category: 'Events',
-      title: 'Raksha Bandhan Celebration'
+      title: 'Prayer Meeting'
     },
     {
       src: '/images/events/event5.jpeg',
@@ -53,12 +53,12 @@ const Gallery: React.FC = () => {
       category: 'Staff',
       title: 'Teachers Team'
     },
-    {
-      src: '/images/events/event6.jpeg',
-      alt: 'Students eating lunch in class',
-      category: 'Students',
-      title: 'Lunch Break Moments'
-    },
+    // {
+    //   src: '/images/events/event6.jpeg',
+    //   alt: 'Students eating lunch in class',
+    //   category: 'Students',
+    //   title: 'Lunch Break Moments'
+    // },
     {
       src: '/images/events/event7.jpeg',
       alt: 'School event',
@@ -89,12 +89,12 @@ const Gallery: React.FC = () => {
       category: 'Events',
       title: 'School Event'
     },
-    {
-      src: '/images/events/event12.jpeg',
-      alt: 'School event',
-      category: 'Events',
-      title: 'School Event'
-    },
+    // {
+    //   src: '/images/events/event12.jpeg',
+    //   alt: 'School event',
+    //   category: 'Events',
+    //   title: 'School Event'
+    // },
     {
       src: '/images/events/event13.jpeg',
       alt: 'School event',

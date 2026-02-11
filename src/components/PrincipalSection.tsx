@@ -20,8 +20,8 @@ const PrincipalSection: React.FC = () => {
           </p>
         </motion.div>
 
-        <div className="relative max-w-4xl mx-auto pb-56">
-          {/* Message from Principal - Event 16 */}
+        <div className="max-w-4xl mx-auto">
+          {/* Message from Principal with image at top */}
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -29,36 +29,52 @@ const PrincipalSection: React.FC = () => {
             transition={{ duration: 0.5 }}
             className="rounded-2xl overflow-hidden shadow-xl bg-gray-50"
           >
-            <div className="min-h-[280px]">
-              <img
-                src="/images/events/event16.jpeg"
-                alt="Message from Principal"
-                className="w-full h-full min-h-[280px] object-contain object-top bg-white"
-              />
-            </div>
-            <div className="p-6 text-center border-t border-gray-200">
-              <h3 className="text-xl font-semibold text-gray-900">Message from Principal</h3>
-            </div>
-          </motion.div>
-
-          {/* Principal's Picture - bottom right */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.4, delay: 0.2 }}
-            className="absolute bottom-0 right-0 lg:right-4 flex flex-col items-center"
-          >
-            <div className="rounded-2xl overflow-hidden shadow-xl bg-white border-2 border-white w-[160px] shrink-0">
-              <div className="aspect-[3/4]">
-                <img
-                  src="/images/events/event15.jpeg"
-                  alt="Principal"
-                  className="w-full h-full object-cover"
-                />
+            {/* Principal image + heading at top */}
+            <div className="flex flex-col sm:flex-row items-center gap-6 p-6 md:p-8 border-b border-gray-200 bg-white">
+              <div className="rounded-xl overflow-hidden shadow-lg shrink-0 w-[140px] sm:w-[160px]">
+                <div className="aspect-[3/4]">
+                  <img
+                    src="/images/events/event15.jpeg"
+                    alt="Principal"
+                    className="w-full h-full object-cover"
+                  />
+                </div>
               </div>
-              <div className="py-2 px-3 text-center bg-gray-50">
-                <span className="text-sm font-semibold text-gray-900">Principal</span>
+              <div className="flex-1 text-center sm:text-left">
+                <h3 className="text-xl font-semibold text-gray-900">Message from Principal</h3>
+                <p className="text-sm text-gray-600 mt-1">Priyanka Malik</p>
+              </div>
+            </div>
+            <div className="p-8 md:p-10">
+              <div className="prose prose-gray max-w-none text-gray-700 space-y-4 text-base leading-relaxed">
+                <p>
+                  Our school firmly believes that true education goes beyond academic excellence.
+                  &ldquo;Shiksha aur Sanskar&rdquo; reflects our commitment to nurturing knowledgeable,
+                  disciplined, and value-driven individuals. We aim to develop students who excel
+                  academically while upholding moral values, respect, and responsibility.
+                </p>
+                <p>
+                  Education is not merely the acquisition of knowledge but the development of
+                  character, values, and lifelong skills. At our school, we strive to create a
+                  nurturing and stimulating environment where every child is encouraged to explore
+                  their potential, think creatively, and grow with confidence.
+                </p>
+                <p>
+                  We believe in holistic education that balances academic excellence with moral
+                  values, discipline, and co-curricular activities. Our dedicated faculty works
+                  tirelessly to guide students toward becoming responsible, compassionate, and
+                  confident individuals ready to face future challenges.
+                </p>
+                <p>
+                  We value the partnership between parents, teachers, and students, as together we
+                  can shape a brighter tomorrow. I invite you to explore our website and learn more
+                  about our vision, achievements, and vibrant school community.
+                </p>
+                <p className="pt-4">
+                  Regards
+                  <br />
+                  <span className="font-semibold text-gray-900">Priyanka Malik</span>
+                </p>
               </div>
             </div>
           </motion.div>
